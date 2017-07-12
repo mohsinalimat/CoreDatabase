@@ -18,6 +18,18 @@
     
     NSEntityDescription *entityDesc = [NSEntityDescription entityForName:entityName inManagedObjectContext:managedObjectContext];
     
+//     Show in Ascending Order
+    /*
+    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"ADD_TABLE_NAME"];
+    NSSortDescriptor *sort = [[NSSortDescriptor alloc] initWithKey:@"ADD_KEY_OF_ASCENDING_ORDER" ascending:YES selector:@selector(localizedStandardCompare:)];
+    NSArray *sortDescription = [[NSArray alloc] initWithObjects:sort, nil];
+    [request setSortDescriptors:sortDescription];
+        
+    NSError *error;
+    NSArray *objects = [managedObjectContext executeFetchRequest:request error:&error];
+    NSLog(@"Array : %@",objects);
+    */
+    
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     [request setEntity:entityDesc];
     [request setReturnsObjectsAsFaults:NO];
