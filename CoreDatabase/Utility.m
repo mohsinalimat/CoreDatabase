@@ -139,16 +139,15 @@
     }
     
 //    OPTION ONE RECORD DELETE IN TABLE
-//        NSArray *arrayResult = [Utility fetchData:ACCOUNT_DETAILS prediction:[[NSUserDefaults standardUserDefaults] valueForKey:@"UniqueIdLast"]];
-//        AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication]delegate];
-//        NSManagedObjectContext *managedObjectContext = [appDelegate managedObjectContext];
-//        for (int i = 0; i < [arrayResult  count]; i++)
-//        {
-//    
-//    
-//            [managedObjectContext deleteObject:[arrayResult  objectAtIndex:i]];
-//            
-//        }
+    /*
+       NSArray *arrayResult = [Utility fetchData:ACCOUNT_DETAILS prediction:[[NSUserDefaults standardUserDefaults] valueForKey:@"UniqueIdLast"]];
+       AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication]delegate];
+       NSManagedObjectContext *managedObjectContext = [appDelegate managedObjectContext];
+       for (int i = 0; i < [arrayResult  count]; i++)
+       {
+            [managedObjectContext deleteObject:[arrayResult  objectAtIndex:i]];
+       }
+     */
 }
 
 
